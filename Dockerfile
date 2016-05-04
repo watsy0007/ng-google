@@ -3,7 +3,6 @@ MAINTAINER watsy0007 <watsy0007@gmail.com>
 
 # Install Debian and base software.
 RUN \
-  sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
   apt-get update && \
   apt-get -y upgrade && \
   apt-get install -y git wget build-essential zlib1g-dev libpcre3-dev git gcc g++ make && \
