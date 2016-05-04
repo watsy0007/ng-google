@@ -36,6 +36,9 @@ RUN \
   make && \
   make install
 
+# certs
+RUN mkdir -p /opt/nginx-1.7.8/certs
+
 # Run Nginx
 ADD ./nginx.conf /opt/nginx-1.7.8/conf/nginx.conf
 
