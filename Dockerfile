@@ -1,7 +1,7 @@
-FROM debian:8.4
-MAINTAINER clarkzjw <clarkzjw@gmail.com>
+FROM debian:jessie
+MAINTAINER watsy0007 <watsy0007@gmail.com>
 
-# Install Ubuntu and base software.
+# Install Debian and base software.
 RUN \
   sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
   apt-get update && \
