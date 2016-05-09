@@ -12,7 +12,7 @@
 8. daocloud加入集群
 9. git clone https://github.com/letsencrypt/letsencrypt
 10. cd letsencrypt/
-11. ./letsencrypt-auto certonly --standalone --email gfwtoday@gmail.com -d domain
+11. ./letsencrypt-auto certonly --standalone --email email -d domain
 12. cp /etc/letsencrypt/live/fuckgfw.today/fullchain.pem /var/local/nginx/certs/gfw.crt
 13. cp /etc/letsencrypt/live/fuckgfw.today/privkey.pem /var/local/nginx/certs/gfw.key
 14. reboot docker
